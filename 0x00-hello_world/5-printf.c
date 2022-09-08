@@ -2,7 +2,7 @@
 /*
  * main - A program to print the string in the function
  *
- * DESCRIPTION: The program below will print out
+ * Description: Using the main function
  * with proper grammar, but the outcome is a piece of art
  *
  * Return: 0 once code has run without errors
