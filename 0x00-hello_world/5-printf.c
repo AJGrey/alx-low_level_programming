@@ -1,5 +1,5 @@
 #include<stdio.h>
-/*
+/**
  * main - A program to print the string in the function
  *
  * Description: Using the main function
