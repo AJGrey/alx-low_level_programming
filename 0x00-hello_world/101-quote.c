@@ -1,10 +1,13 @@
-#include <stdio.h>
-/*
- * main - a main function 
- * Description: will display a string
- * Return 1: with errors
+#include <unistd.h>
+/**
+ * main - Entry point
+ *
+ * Return: Always 1 (Success)
  */
 int main(void)
 {
-	display("and that piece of art is useful - Dora Korper, 2015-10-19\n")
-	return (
+	char str1[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+
+	write(2, str1, 59);
+	return (1);
+}
