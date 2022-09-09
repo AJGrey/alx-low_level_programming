@@ -8,13 +8,12 @@
  * the integer is positive, negative or zero
  *
  * Return 0: when successful
- * 
- */
+i */
 int main(void)
 {
 int a;
 srand(time(0));
-	a = rand() - RAND_MAX / 2;
+a = rand() - RAND_MAX / 2;
 if (a > 0)
 {
 	printf("%i is positive\n", a);
