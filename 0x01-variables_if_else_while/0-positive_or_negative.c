@@ -1,6 +1,5 @@
 #include<stdio.h>
 #include<time.h>
-#include<stdio.h>
 
 /**
  * main - this is the entry point of the program
@@ -17,7 +16,7 @@ srand(time(0));
 	a = rand() - RAND_MAX / 2;
 if (a > 0)
 {
-	printf("%:wqi is positive\n", a);
+	printf("%i is positive\n", a);
 }
 else if (a == 0)
 {
