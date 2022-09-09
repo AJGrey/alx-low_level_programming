@@ -1,7 +1,6 @@
 #include<stdlib.h>
-#include<stdio.h>
 #include<time.h>
-
+#include<stdio.h>
 /**
  * main - this is the entry point of the program
  * Description: this program will tell whether 
