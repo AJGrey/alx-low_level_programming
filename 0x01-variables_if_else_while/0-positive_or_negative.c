@@ -22,6 +22,7 @@ if (a > 0)
 else if (a == 0)
 {
 	printf("%i is zero\n", a);
+}
 else if (a < 0)
 {
 	printf("%i is negative\n", a);
