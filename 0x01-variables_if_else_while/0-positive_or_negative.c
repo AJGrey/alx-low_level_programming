@@ -17,7 +17,7 @@ srand(time(0));
 	a = rand() - RAND_MAX / 2;
 if (a > 0)
 {
-	printf("%di is positive\n", a);
+	printf("%:wqi is positive\n", a);
 }
 else if (a == 0)
 {
