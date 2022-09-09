@@ -1,7 +1,7 @@
 #include<stdlib.h>
 #include<time.h>
 #include<stdio.h>
-i/**
+/**
  * main print if positive, zero or negative
  *
  * Description: using the main function
