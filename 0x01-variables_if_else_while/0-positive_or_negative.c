@@ -8,7 +8,7 @@
  * the integer is positive, negative or zero
  *
  * Return 0: when successful
- *
+ * 
  */
 int main(void)
 {
@@ -27,6 +27,3 @@ else if (a < 0)
 {
 	printf("%i is negative\n", a);
 }
-
-
-
