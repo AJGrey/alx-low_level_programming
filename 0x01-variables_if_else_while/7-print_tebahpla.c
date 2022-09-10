@@ -1,15 +1,18 @@
 #include<stdio.h>
+
 /**
  * main - entry point
  *
- * Return: Always 0 (Success)
+ * Return 0 Always
  *
  */
 int main(void)
 {
-	int num;
-	for (num = 0; num <= 9; num++)
-	putchar(num + ' 0');
+	char ad;
+
+	for (ad = 0; ad <= 9; ad++)
+		putchar(ad);
 	putchar('\n');
 	return (0);
 }
+
