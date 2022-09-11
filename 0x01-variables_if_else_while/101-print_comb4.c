@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	int hunds, tens, units, k;
+	int hunds, tens, units;
 	char i, j, _j;
 	i ='1';
 	j = '2';
