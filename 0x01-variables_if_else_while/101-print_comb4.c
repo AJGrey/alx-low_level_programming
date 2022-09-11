@@ -8,6 +8,7 @@
 int main(void)
 {
 	int hunds, tens, units, k;
+	char i, j, _j;
 	i ='1';
 	j = '2';
 	for (hunds = '0'; hunds <= '9'; hunds++)
@@ -19,7 +20,7 @@ int main(void)
 			putchar(hunds);
 			putchar(tens);
 			putchar(units);
-			if (huns == '7' && tens == '8' && unit == '9')
+			if (hunds == '7' && tens == '8' && units == '9')
 				break;
 			putchar(',');
 			putchar(' ');
