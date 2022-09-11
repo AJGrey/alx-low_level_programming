@@ -15,7 +15,7 @@ int main(void)
 		{
 			for (tens2 = '0'; tens2 <= '9'; tens2++)
 			{
-				if (tens2 < tens1)
+				if (tens2 <= tens1)
 				continue;
 				for (units2 = '0'; units2 <= '9'; units2++)
 				{
