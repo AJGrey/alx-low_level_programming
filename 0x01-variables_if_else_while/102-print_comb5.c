@@ -18,7 +18,7 @@ int main(void)
 				continue;
 				for (units2 = '0'; units2 <= '9'; units2++)
 				{
-					if (units2 <= units1)
+					if (units2 < units1)
 						continue;
 					putchar(tens1);
 					putchar(units1);
