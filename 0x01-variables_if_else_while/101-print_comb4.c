@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	int hunds, tens, units, _j;
+	int hunds, tens, units;
 
 	for (hunds = '0'; hunds <= '9'; hunds++)
 	{
