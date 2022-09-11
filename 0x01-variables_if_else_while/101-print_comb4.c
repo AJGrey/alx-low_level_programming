@@ -14,7 +14,7 @@ int main(void)
 		for (tens = '0'; tens <= '9'; tens++)
 		{
 			if (tens <= hunds)
-				contniue;
+				continue;
 			for (units = '0'; units <= '9'; units++)
 			{
 				if (units <= tens)
