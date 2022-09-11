@@ -1,5 +1,6 @@
+#include<stdio.h>
 /**
- * main - entry point
+ * main - Entry point
  *
  * Return: 0 Always
  */
