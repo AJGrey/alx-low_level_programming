@@ -7,7 +7,7 @@
 int main(void)
 {
 	int tens, units, k;
-	
+
 	k = '1';
 	for (tens = '0'; tens <= '9'; tens++)
 	{
