@@ -8,7 +8,7 @@
 int main(void)
 {
 	int hunds, tens, units, _j;
-	char i, j;
+	int i, j;
 	i ='1';
 	j = '2';
 	for (hunds = '0'; hunds <= '9'; hunds++)
