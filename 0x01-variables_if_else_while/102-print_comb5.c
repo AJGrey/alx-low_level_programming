@@ -14,21 +14,21 @@ int main(void)
 		{
 			for (tens2 = '0'; tens2 <= '9'; tens2++)
 			{
-			if (tens2 < tens1)
+				if (tens2 < tens1)
 				continue;
-				for units2 = '0'; units2 <= '9'; units2++)
+				for (units2 = '0'; units2 <= '9'; units2++)
 				{
-				if (units2 <= units1)
-					continue;
-				putchar(tens1);
-				putchar(units1);
-				putchar(' ');
-				putchar(tens2);
-				putchar(units2);
-				if (tens1 == '9' && units1 == '8' && tens2 == '9' && units2 == '9')
-					break;
-				putchar(',');
-				putchar(' ');
+					if (units2 <= units1)
+						continue;
+					putchar(tens1);
+					putchar(units1);
+					putchar(' ');
+					putchar(tens2);
+					putchar(units2);
+					if (tens1 == '9' && units1 == '8' && tens2 == '9' && units2 == '9')
+						break;
+					putchar(',');
+					putchar(' ');
 				}
 			}
 		}
