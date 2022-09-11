@@ -8,6 +8,7 @@ int main(void)
 {
 	int tens1, units1;
 	int tens2, units2;
+
 	for (tens1 = '0'; tens1 <= '9'; tens1++)
 	{
 		for (units1 = '0'; units1 <= '9'; units1++)
@@ -18,7 +19,7 @@ int main(void)
 				continue;
 				for (units2 = '0'; units2 <= '9'; units2++)
 				{
-					if (units2 < units1)
+					if (units2 <= units1)
 						continue;
 					putchar(tens1);
 					putchar(units1);
