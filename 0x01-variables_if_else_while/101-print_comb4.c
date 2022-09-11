@@ -8,15 +8,17 @@
 int main(void)
 {
 	int hunds, tens, units, _j;
-	int i, j;
-	i ='1';
-	j = '2';
+
 	for (hunds = '0'; hunds <= '9'; hunds++)
 	{
 		for (tens = '0'; tens <= '9'; tens++)
 		{
+			if (tens <= hunds)
+				contniue;
 			for (units = '0'; units <= '9'; units++)
 			{
+				if (units <= tens)
+					continue;
 			putchar(hunds);
 			putchar(tens);
 			putchar(units);
@@ -24,13 +26,9 @@ int main(void)
 				break;
 			putchar(',');
 			putchar(' ');
-		}
-                j++;
+			}
+		}             
         }
-	i++;
-	_j++;
-	j = _j;
-}
 	putchar('\n');
 	return (0);
 }
