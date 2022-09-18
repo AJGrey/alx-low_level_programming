@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * int _isalpha(int c) - a function to check if c is a letter
+ * int _isalpha - a function to check if c is a letter
  * @c: is the int that will use for the argument of the function
  * Return: 0 Always (Success)
  *
