@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_sign - is a function that will tell the sign a given number 
+ * print_sign - is a function that will tell the sign a given number
  * @n: is the argument that will be used for the function
  * Return: 0 Alwasy (Success)
  *
