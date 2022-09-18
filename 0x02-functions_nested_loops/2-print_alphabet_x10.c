@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * main - print 10times aiphabets
- *
+ * Description:this program will the alphabet 10times in lowercase
  * Return: 0 Always
  *
  */
