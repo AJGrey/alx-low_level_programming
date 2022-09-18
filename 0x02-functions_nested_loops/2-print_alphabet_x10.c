@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main - print 10times aiphabets
+ * print_alphabet_x10 - print 10times aiphabets
  * Description:this program will the alphabet 10times in lowercase
  * Return: 0 Always
  *
