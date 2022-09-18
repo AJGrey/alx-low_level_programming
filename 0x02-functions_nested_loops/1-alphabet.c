@@ -12,5 +12,6 @@ void print_alpahbet(void)
 	{
 		_putchar(c);
 	}
-_putchar('\n');
+	_putchar('\n');
+	return (0);
 }
