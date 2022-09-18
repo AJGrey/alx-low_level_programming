@@ -2,8 +2,8 @@
 
 /**
  * main - Entry point
- *
- * Return: 0 Always
+ * Description: print putchar
+ * Return: 0 always
  *
  */
 int main(void)
@@ -13,12 +13,10 @@ int main(void)
 	_putchar('u');
 	_putchar('t');
 	_putchar('c');
-	_putcahr('h');
+	_putchar('h');
 	_putchar('a');
-	_putcahr('r');
+	_putchar('r');
 	_putchar('\n');
-
+	
 	return (0);
 }
-
-
