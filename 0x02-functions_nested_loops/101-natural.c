@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- * main - a function to print counts of multiples 
- * 	of 3 or 5 below 1024
+ * main - a function to print counts of multiples
+ * of 3 or 5 below 1024
  * Return: 0 Always
  *
  */
