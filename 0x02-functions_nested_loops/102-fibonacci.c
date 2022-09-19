@@ -17,13 +17,9 @@ int main(void)
 			n2 = n3;
 
 			if (inc == 49)
-			{
-			}	printf("\n");
+				printf("\n");
 			else
-			{	printf(", ");
-			}
-
+				printf(", ");
 		}
-
-	return (0);
+		return (0);
 }
