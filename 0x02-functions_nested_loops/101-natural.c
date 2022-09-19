@@ -1,29 +1,20 @@
 #include <stdio.h>
 /**
- * main - prints out first 50
- * fibonacci suit numbers
- * Return: return 0
+ * main - a function to print counts of multiples 
+ * 	of 3 or 5 below 1024
+ * Return: 0 Always
+ *
  */
 int main(void)
 {
-	int inc;
-	unsigned long n1 = 0, n2 = 1, n3;
-	
-	for (inc = 0; inc < 50; inc++)
-		{
-			n3 = n1 + n2;
-			printf("%lu", n3);
-			n1 = n2;
-			n2 = n3;
+	int n;
+	int sum = 0;
 
-		if (inc == 49)
-		{
-			printf("\n");
-		}
-		else
-		{
-			printf(", ");
-		}
-		}
-		return (0);
+	for (n = 0; n < 1024; n++)
+	{
+		if ((n % 3) == 0 || (n % 5) == 0)
+			sum += n;
+	}
+	printf("%d\n", sum);
+	return (0);
 }
