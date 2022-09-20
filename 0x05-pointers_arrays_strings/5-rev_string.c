@@ -11,9 +11,14 @@
 
 void print_rev(char *s)
 {
-	int len = strlen(s);
+	int l, i;
+	char ch;
 
-	while (len--)
-		putchar(*(s + len));
-	putchar(10);
+	for (i = 0; s[l] != '\0'; l++)
+		for (i = 0; i < l / 2; i++)
+		{
+			ch = s[l];
+			s[l] = s[l - 1  -i];
+			s[l -1 -i] = ch;
+		}
 }
