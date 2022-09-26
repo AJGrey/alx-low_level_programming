@@ -9,19 +9,19 @@
  */
 void print_diagsums(int *a, int size)
 {
-	int i, j, a;
+	int i, j, b;
 	int l = 0;
 	int r = 0;
 
 	for (i = 0; i < size; i++)
 	{
-		p = (i * size) + i;
-		l += *(a + p);
+		b = (i * size) + i;
+		l += *(a + b);
 	}
 	for (j = 0; j < size; j++)
 	{
-		p = (j * size) + (size - 1 - j);
-		r += *(a + p);
+		b = (j * size) + (size - 1 - j);
+		r += *(a + b);
 	}
 	printf("%i, %i\n", l, r);
 }
