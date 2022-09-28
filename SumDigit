@@ -1,0 +1,40 @@
+#include<stdio.h>
+
+int add(int num);
+int add_rec(int num);
+
+int main()
+{
+    int num, sum;
+
+    printf("enter any number");
+    scanf("%d", &num);
+    printf("the sum of %d is: %d\n", num, add(num));
+    printf("the sum of %d is without rec is: %d", num, add_rec(num));
+    return (0);
+}
+
+int add(int num)
+{
+    int rem, sum;
+
+    while(num)
+    {
+        rem = num % 10;
+        sum = sum + rem;
+        num = num / 10;
+    }
+    return(sum);
+}
+
+int add_rec(int num)
+{
+ if (num)
+ {
+     return ((num % 10) + add_rec(num / 10));
+ }
+ else
+ {
+     return;
+ }
+}
