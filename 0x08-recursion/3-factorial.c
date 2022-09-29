@@ -8,8 +8,6 @@
  */
 int factorial(int n)
 {
-	int n;
-
 	if (n < 1)
 		return (-1);
 	else if (n == 1)
