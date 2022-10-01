@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "main.h"
+#include <stdbool.h>
 
 /**
  * main - print the name of the program
@@ -12,7 +13,7 @@ int main(int argc, char *argv[])
 {
 	int count;
 
-	if (argv > 0)
+	while (true)
 	{
 		for (count = 0; count < argc; count++)
 		{
