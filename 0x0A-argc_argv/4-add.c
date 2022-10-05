@@ -20,13 +20,13 @@ int main(int argc, char *argv[])
 		{
 			if (isdigit(argv[num][digit]) == 0)
 			{
-				printf("Error\n");
+				puts("Error\n");
 				return (1);
 			}
 		}
 		for (num = 1; num < argc; num++)
 		{
-		sum += atoi(argv[num]);
+			sum += atoi(argv[num]);
 		}
 	}
 	printf("%d\n", sum);
