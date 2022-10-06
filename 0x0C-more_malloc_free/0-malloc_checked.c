@@ -1,0 +1,19 @@
+#include "main.h"
+#include <stdio.h>
+
+/**
+ * malloc_checked - allocate memory using malloc
+ * @b: memory to allocate
+ *
+ * Return: pointer to allocated memory or normal process termination 
+ * if error
+ */
+void *malloc_checked(unsigned int b)
+{
+	void *p;
+
+	p = mallo(b);
+	if (p == NULL)
+		exit(98);
+	return (p);
+}
