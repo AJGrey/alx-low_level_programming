@@ -2,40 +2,34 @@
 #include <stddef.h>
 
 /**
- * read_textfile - a function to read the text file and prints to POSIX stdio
- * @filename : is the pointer to the file name
- * @letters : is the number if letters it should read and print
+ * read_textfile - reads a text file and prints it to the standard output
+ * @filename: name of the file
+ * @letters:  number of letters to be printed
  *
- * Return:	0 if the file can not be opened or read
- * 0 if filename is NULL
- * 0 if write fails or does not write the expected output
+ * Return: number of letters read and printed
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int fd;
-	int nd, nr;
-	char *buff;
+	int file, n_read, wrote;
+	char *buffer;
 
-	if (!filename)
-		return (0);
-
-	fd = open("filename.txt", O_RDONLY);
-
-	if (fd == -1)
-		return (0);
-	buff = malloc(sizeof(char) * (letters + 1));
-	if (!buff)
+	buffer = malloc(sizeof(*buffer) * (letters + 1));
+	if (filename == NULL || buffer == NULL)
 	{
-		free(buff);
+		free(buffer);
 		return (0);
 	}
-
-	nd = read(fd, buff, letters);
-	nr = write(STDOUT_FILENO, buff, nd);
-	if (nr != nd)
+	file = open(filename, O_RDONLY);
+	if (file == -1)
 		return (0);
-
-	free(buff);
-	close(fd);
-	return (nr);
+	n_read = read(file, buffer, letters);
+	if (n_read == -1)
+		return (0);
+	buffer[n_read] = '\0';
+	wrote = write(STDOUT_FILENO, buffer, n_read);
+	if (wrote != n_read)
+		return (0);
+	free(buffer);
+	close(file);
+	return (n_read);
 }
